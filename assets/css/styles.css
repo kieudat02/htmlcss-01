@@ -232,8 +232,9 @@ a {
 }
 
 .list-guide {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center; */
     margin-top: 70px;
 }
 
@@ -311,7 +312,8 @@ a {
 }
 
 .featured .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }

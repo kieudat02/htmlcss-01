@@ -1,0 +1,270 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .show-on-mobile {
+        display: none;
+    }
+
+    .mobile-header img {
+        display: none;
+    }
+    .menu-drawer ul {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-menu {
+        width: 25px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: all 0.3s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer img {
+        padding: 20px;
+    }
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .menu-drawer ul li {
+        padding: 10px 20px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #666;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-item {
+        margin: 0 auto auto;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 40px;
+        order: 2;
+    }
+
+    .stats .info {
+        order: 1;
+        padding: 0;
+    }
+
+    .stats .sub-title {
+        width: 69%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty {
+        font-size: 6rem;
+    }
+
+    .stats .qty-desc {
+        font-size: 1.5rem;
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 30px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .navbar .actions {
+        display: none;
+    }
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+    }
+
+    .hero-wrap .info {
+        width: 90%;
+    }
+
+    .hero-wrap .title {
+        font-size: 5.2rem;
+    }
+
+    .clients .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clients .images a {
+        padding: 0 22px;
+        margin: 0 auto;
+    }
+
+    .guide-item__seller {
+        width: 70%;
+    }
+
+    .desc-mobile {
+        text-align: center;
+    }
+
+    .featured .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured .sub-title {
+        white-space: nowrap;
+    }
+
+    .featured .desc {
+        white-space: wrap;
+        text-align: center;
+    }
+
+    .featured .link {
+        margin-top: 10px;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .stats .sub-title {
+        width: 80%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats-trend {
+        top: 20px;
+        left: 20px;
+        border-radius: 12px;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats .qty-item {
+        margin-top: 50px;
+    }
+
+    .stats .qty-desc {
+        text-align: center;
+    }
+
+    .subscription .info {
+        padding: 32px;
+    }
+
+    .subscription .body {
+        height: auto;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 20px;
+    }
+
+
+}
